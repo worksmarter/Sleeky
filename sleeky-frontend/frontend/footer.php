@@ -5,6 +5,7 @@
 	function fallbackCopyTextToClipboard(text) {
 		var textArea = document.createElement("textarea");
 		textArea.value = text;
+		event.preventDefault();
 		
 		// Avoid scrolling to bottom
 		textArea.style.top = "0";
